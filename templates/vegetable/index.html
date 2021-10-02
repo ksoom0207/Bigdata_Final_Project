@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="utf-8">
+
+  <head>
+<style>
+           .fluid{
+           width:100px;
+           height:100px;
+           }
+           .news>li{
+            display: inline;
+            padding: 0 10px;
+           }
+           .news2{
+            list-style:none;
+           }
+           .newstitle{
+            text-align:center;
+           }
+           .text-uppercase{
+           font-family: 'Nanum Pen Script', cursive;
+           }
+     </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>농산물 데이터 수집 사이트</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">밤새지마루</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Data Collect</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Data Analysis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#datavisual">Data Visualization</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <!--<div class="intro-lead-in">Collecting Agriculture Data System</div>-->
+          <div class="intro-heading text-uppercase">Collecting Agriculture Data System</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">ABOUT US...</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">농산물 데이터 수집 시스템은 다음과 같은 서비스를 제공합니다.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading"> <a class="nav-link js-scroll-trigger" href="#portfolio">Data Collect</a></h4>
+            <p class="text-muted">농산물 데이터에 대한 정보를 수집합니다.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class=" fa fa-search fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading"><a class="nav-link js-scroll-trigger" href="#about">Data Analysis</a></h4>
+            <p class="text-muted">수집된 농산물 데이터들을 분석합니다.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading"><a class="nav-link js-scroll-trigger" href="#datavisual">Data Visualization</a></h4>
+            <p class="text-muted">농산물 데이터 정보 수집 현황을 시각화하여 보여줍니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Data Collect</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="/static/img/portfolio/blog.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>BLOG</h4>
+              <!--<p class="text-muted">Illustration</p>-->
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+
+              <img class="img-fluid" src="/static/img/portfolio/news-logo.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>NEWS</h4>
+              <!--<p class="text-muted">Graphic Design</p>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+	<section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Data Analysis</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+
+
+	<section id="datavisual">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Data Visualization</h2>
+            <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+	<!-- Team -->
+    <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our (Team Name)</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="static/img/team/진현.jpg" alt="">
+              <h4>JinHyeon Song</h4>
+              <p class="text-muted">Team Leader & Web Crawling</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="static/img/team/선아.jpg" alt="">
+              <h4>SeonAh Min</h4>
+              <p class="text-muted">Web Design & Develop</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="static/img/team/수민.png" alt="">
+              <h4>SooMin Kim</h4>
+              <p class="text-muted">Web Crawling</p>
+              <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Your Website 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">COLLECT DATA FROM BLOG</h2>
+
+                  <p class="item-intro text-muted">블로그에 대한 데이터 모으기</p>
+                  <form method="post" action="{% url 'navertest' %}" accept-charset="utf-8">
+                    {% csrf_token %}
+                      <fieldset>
+                          <legend class="newstitle">블로그 항목</legend>
+                          <ul class="news">
+                             <ul class="news2">
+                               <li><input type="text" name="text1" id="text1" placeholder="검색 키워드">
+                                    <input type="date" name="start_date1" id="start_date1" value="2018-03-30">
+                                    <input type="date" name="end_date1" id="end_date1" value="2018-05-30">
+                                    <input type="submit" name="submit" value="수집"></li>
+                             </ul>
+                                <li>
+                                    <input type="checkbox" name="naver" value="naver" alt="naverblogs">
+                                    <img class="fluid"  src="static/img/modal/naver.png">
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="daum" value="daum" alt="daumblogs">
+                                    <img class="fluid" src="static/img/modal/daum.png">
+                                </li>
+                          </ul>
+                      </fieldset>
+                  </form>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="modal-body">
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                 <!-- Project Details Go Here -->
+                 <h2 class="text-uppercase">COLLECT DATA FROM NEWS</h2>
+                 <p class="item-intro text-muted">뉴스에 대한 데이터 모으기   </p>
+               </div>
+            </div>
+                <form method ="post" action="{% url 'tests' %}" accept-charset="utf-8">
+                  {% csrf_token %}
+                     <fieldset>
+                        <legend class="newstitle">뉴스 항목</legend>
+                          <ul class="news">
+                              <ul class="news2">
+                                  <li><input type ="text" name="text" id="text" placeholder="검색 키워드">
+                                    <input type="date" name="start_date" id="start_date" value="2018-03-30">
+                                    <input type="date" name="end_date" id= "end_date" value="2018-05-30">
+                                    <input type="submit" name="submit" value="수집"></li>
+                              </ul>
+                              <li>
+                                    <input type="checkbox" name="KBS" id="KBS" value="KBS" checked/>
+                                    <img class="fluid" src="static/img/modal/KBS_logo.png" alt="KBS">
+                              </li>
+                              <li>
+                                    <input type="checkbox" name="MBC" id="MBC" value="MBC">
+                                    <img class="fluid" src="static/img/modal/MBC_logo.png" alt="MBC">
+                              </li>
+                              <li>
+                                   <input type="checkbox" name="SBS" id="SBS" value="SBS">
+                                   <img class="fluid" src="static/img/modal/SBS_logo.png" alt="SBS">
+                              </li>
+                              <li>
+                                   <input type="checkbox" name="JTBC" id="JTBC" value="JTBC">
+                                   <img class="fluid" src="static/img/modal/JTBC_logo.png" alt="JTBC">
+                              </li>
+                         </ul>
+                     </fieldset>
+                </form>
+
+            <div class="row">
+               <div class="col-lg-8 mx-auto">
+                 <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Close</button>
+               </div>
+            </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.js' %}"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'js/contact_me.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/agency.js' %}"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+  </body>
+
+</html>
